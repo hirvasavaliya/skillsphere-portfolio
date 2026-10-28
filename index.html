@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillSphere — a student portfolio showcasing skills, projects, and learning milestones.">
+  <title>SkillSphere | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="SkillSphere home">Skill<span>Sphere</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a class="nav-contact" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> STUDENT • BUILDER • CURIOUS MIND</p>
+        <h1>Turning small ideas<br>into <span class="gradient-text">useful things.</span></h1>
+        <p class="hero-description">Hi, I'm <strong>Bhakti</strong> — an IT student exploring web development, creative problem-solving, and projects that make everyday tasks simpler.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button secondary" href="#contact">Let's connect</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>03+</strong><span>Practice projects</span></div>
+          <div><strong>Always</strong><span>Learning mindset</span></div>
+          <div><strong>Team</strong><span>First attitude</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration representing ideas and technology">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="planet"><span>Bs.</span></div>
+        <div class="float-card card-code"><span class="card-icon">&lt;/&gt;</span><div><b>Build</b><small>with purpose</small></div></div>
+        <div class="float-card card-idea"><span class="card-icon">✦</span><div><b>Stay curious</b><small>every single day</small></div></div>
+        <div class="spark spark-one">✳</div><div class="spark spark-two">✦</div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Curiosity is my <span class="gradient-text">starting point.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-card"><span class="large-symbol">✦</span><h3>What I enjoy</h3><p>Breaking a big problem into smaller steps, experimenting with ideas, and making digital experiences clear and friendly.</p></div>
+        <div class="about-card"><span class="large-symbol">⌘</span><h3>How I work</h3><p>I like to plan first, build a simple version, test it, and improve it using feedback instead of aiming for perfect on the first try.</p></div>
+        <div class="about-card"><span class="large-symbol">↗</span><h3>What is next</h3><p>Growing my web development skills, collaborating with others, and creating projects that combine thoughtful design with practical value.</p></div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading"><p class="eyebrow">MY TOOLKIT</p><h2>Skills I'm <span class="gradient-text">building.</span></h2><p class="section-intro">A growing toolkit — strengthened through practice, feedback, and real projects.</p></div>
+      <div class="skill-list">
+        <div class="skill-item"><div class="skill-label"><span>HTML & accessibility</span><span>Learning</span></div><div class="progress"><span style="width:82%"></span></div></div>
+        <div class="skill-item"><div class="skill-label"><span>CSS & responsive design</span><span>Learning</span></div><div class="progress"><span style="width:75%"></span></div></div>
+        <div class="skill-item"><div class="skill-label"><span>JavaScript fundamentals</span><span>Practicing</span></div><div class="progress"><span style="width:62%"></span></div></div>
+        <div class="skill-item"><div class="skill-label"><span>Git & GitHub</span><span>Practicing</span></div><div class="progress"><span style="width:68%"></span></div></div>
+      </div>
+      <p class="note">Skill bars are illustrative self-assessments. Update them as your experience grows.</p>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading project-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Projects with a <span class="gradient-text">purpose.</span></h2></div><p class="section-intro">Small projects are where ideas become skills.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-purple"><div class="project-top"><span class="project-number">01 / WEB</span><span class="project-mark">⌘</span></div><h3>SkillSphere</h3><p>A responsive portfolio that organizes skills, project highlights, and learning goals in one place.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><button class="project-detail" data-project="skillsphere">View project details ↗</button></article>
+        <article class="project-card project-green"><div class="project-top"><span class="project-number">02 / PRODUCTIVITY</span><span class="project-mark">✓</span></div><h3>Focus Planner</h3><p>A simple daily task planner concept designed to help students break work into manageable steps.</p><div class="tags"><span>UI Design</span><span>Planning</span><span>Ideas</span></div><button class="project-detail" data-project="planner">View project details ↗</button></article>
+        <article class="project-card project-orange"><div class="project-top"><span class="project-number">03 / COMMUNITY</span><span class="project-mark">◎</span></div><h3>Campus Connect</h3><p>A concept for sharing campus events, student activities, and useful opportunities in one place.</p><div class="tags"><span>Community</span><span>Research</span><span>Concept</span></div><button class="project-detail" data-project="campus">View project details ↗</button></article>
+      </div>
+      <p class="note">The second and third cards are concept projects. Replace them with your own work when available.</p>
+    </section>
+
+    <section class="section journey-section" id="journey">
+      <div class="section-heading"><p class="eyebrow">THE PROCESS</p><h2>Progress over <span class="gradient-text">perfection.</span></h2></div>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-dot"></span><p class="timeline-label">STEP 01</p><h3>Learn the basics</h3><p>Understand the building blocks before adding complexity.</p></div>
+        <div class="timeline-item"><span class="timeline-dot"></span><p class="timeline-label">STEP 02</p><h3>Build and test</h3><p>Turn concepts into working pages and test different screen sizes.</p></div>
+        <div class="timeline-item"><span class="timeline-dot"></span><p class="timeline-label">STEP 03</p><h3>Share and improve</h3><p>Use feedback to refine the result and document what I learned.</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">HAVE AN IDEA?</p><h2>Let's make something<br><span class="gradient-text">meaningful.</span></h2><p class="contact-copy">Have a project idea, collaboration opportunity, or helpful feedback? Send a message below.</p></div>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+        <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me what you're thinking..." required></textarea>
+        <button class="button primary" type="submit">Prepare message ↗</button>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#home">Skill<span>Sphere</span></a><p>Designed with curiosity and built with HTML, CSS & JavaScript.</p><a href="#home" class="back-top">Back to top ↑</a></footer>
+
+  <dialog id="projectDialog" class="project-dialog">
+    <button id="closeDialog" class="dialog-close" aria-label="Close project details">×</button>
+    <p class="eyebrow">PROJECT SNAPSHOT</p><h2 id="dialogTitle">Project title</h2><p id="dialogText"></p><div id="dialogTags" class="tags"></div>
+  </dialog>
+</body>
+</html>
